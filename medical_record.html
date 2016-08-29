@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>茜宝宝的病历卡</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    .radio {
+      margin-left: 20px;
+    }
+    .main-container {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+    .tool-group {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul class="nav nav-pills">
+        <li role="presentation" ><a href="./index.html">主页</a></li>
+        <li role="presentation" class="active"><a href="#">病历卡</a></li>
+      </ul>
+    </nav>
+    <div id="chart-container" class="container main-container up-container" style="display:solid">
+      <h2>我打算给你开药了，茜宝宝，你赶紧看看自己的症状</h2>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>我的病历卡</h3></div>
+        <div class="panel-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="container"> 
+                  <h4>茜宝宝，流鼻涕不？</h4>
+                  <div class="row">
+                    <div class="radio">
+                      <label><input type="radio" value="rh-on" name="rhinorrhea">流鼻涕</label>
+                    </div>
+                    <div class="radio">
+                      <label><input id="btn-norh" value="rh-no" type="radio" name="rhinorrhea">不流鼻涕</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item" id="rh-much-div" style="display: none">
+              <div class="row">
+                <div class="container"> 
+                  <h4>茜宝宝，有多少鼻涕呢？</h4>
+                  <div class="row">
+                    <div class="radio">
+                      <label><input type="radio" value="rh-some" name="rhinorrhea-much">不多不多，就一丢丢，擤擤就没了</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="rh-mid" name="rhinorrhea-much">中等多吧，反正擤不完了，而且捏捏鼻子还疼</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="rh-much" name="rhinorrhea-much">老多了，堵得我鼻子都喘不过气了。</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="container"> 
+                  <h4>茜宝宝，嗓子还疼不？</h4>
+                  <div class="row">
+                    <div class="radio">
+                      <label><input type="radio" value="throat-no" name="throat-ache">不疼不疼，没啥感觉了</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="throat-mid" name="throat-ache">还好吧，反正，有点点疼的感觉，不影响啥</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="throat-much" name="throat-ache">疼死宝宝了，我咽东西都困难。</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="container"> 
+                  <h4>茜宝宝，头晕不？</h4>
+                  <div class="row">
+                    <div class="radio">
+                      <label><input type="radio" checked name="dizzy">晕死了，反正沾床就睡，对，就这一个选项</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="container"> 
+                  <h4>茜宝宝，咳嗽不？</h4>
+                  <div class="row">
+                    <div class="radio">
+                      <label><input type="radio" value="cough-no" name="cough">不咳嗽，一点都不咳嗽，就是嗓子不舒服</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="cough-mid" name="cough">轻微的咳嗽，还好啦其实</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="cough-much" name="cough">咳嗽不行了，完全忍不住啊。</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="container"> 
+                  <h4>茜宝宝，发烧没？</h4>
+                  <div class="row">
+                    <div class="radio">
+                      <label><input type="radio" value="fever-no" name="fever">没有，完全没有，就是头晕</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="fever-mid" name="fever">有点点发烧</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="fever-much" name="fever">烧，我把我的手放上去，已经烫成了烤鸡爪了</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              <div class="row">
+                <div class="container"> 
+                  <h4>茜宝宝，身上怕冷还是怕热？</h4>
+                  <div class="row">
+                    <div class="radio">
+                      <label><input type="radio" value="hotcold-no" name="hotcold">啥都不怕</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="hotcold-mid" name="hotcold">怕冷，我觉得这大夏天的冷死了</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="hotcold-much" name="hotcold">怕热，我直冒汗，完全控制不住了</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="container"> 
+                  <h4>茜宝宝，身上有力气没？</h4>
+                  <div class="row">
+                    <div class="radio">
+                      <label><input type="radio" value="effort-no" name="effort">我今儿真的是林黛玉，我连水杯都拿不起来</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="effort-mid" name="effort">还好吧，就是身上有点软</label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" value="effort-much" name="effort">没有问题，我跟雪琦一样，可以扛两桶水</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="row tool-group">
+            <button type="button" id="btn-look" class="btn btn-primary btn-lg">我看看我严重不？</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container main-container" style="display:none" id="con-container">
+      <div class="jumbotron">
+        <h3>哎，朋刚，我的症状就这些了</h3>
+        <p id="look-chart-con"></p>
+        <h3>朋刚给的结论是：</h3>
+        <p id="my-con">
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
