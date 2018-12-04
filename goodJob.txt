@@ -1,6 +1,7 @@
 i love me
 bajjf jfkdaijfeifj击飞分别见覅额安抚你能股份洁琼
 
+
 司法鉴定卡耐基啊
 
 Changes not staged for commit:
@@ -8,3 +9,7 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)
 
     modified:   CONTRIBUTING.md
+
+此时，C4' 指向的快照就和上面使用 merge 命令的例子中 C5 指向的快照一模一样了。 这两种整合方法的最终结果没有任何区别，但是变基使得提交历史更加整洁。 你在查看一个经过变基的分支的历史记录时会发现，尽管实际的开发工作是并行的，但它们看上去就像是串行的一样，提交历史是一条直线没有分叉。
+司法鉴定卡耐基啊
+
