@@ -1,3 +1,5 @@
 Have you tried to read and understand Java¡¯s String format documentation? I have and found it hard to understand. While it does include all the information, the organization leaves something to be desired.
 
 This guide is an attempt to bring some clarity and ease the usage of string formatting in java.
+
+trach what you want
