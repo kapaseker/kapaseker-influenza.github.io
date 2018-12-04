@@ -10,3 +10,5 @@
 gouride
 你就是个啥子！！！哈哈哈！！！#master
 for god # rebase
+
+bug
