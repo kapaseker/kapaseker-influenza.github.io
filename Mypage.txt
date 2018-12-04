@@ -1,1 +1,3 @@
 such mugua xxxxxx gjfdka; thing is good wocuole laotei
+
+另一种给提交打标签的方式是使用轻量标签。 轻量标签本质上是将提交校验和存储到一个文件中 - 没有保存任何其他信息。 创建轻量标签，不需要使用 -a、-s 或 -m 选项，只需要提供标签名字
